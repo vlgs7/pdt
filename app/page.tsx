@@ -9,6 +9,7 @@ export default function Home() {
     '/4.png',
     '/5.png',
     '/6.png',
+    // '/7.png'
   ];
 
   return (
@@ -22,6 +23,12 @@ export default function Home() {
           />
         </div>
       ))}
+      <div key={7} className="w-full relative mb-4">
+          <img
+            src={'/7.png'}
+            className="w-full h-auto object-cover"
+          />
+        </div>
     </div>
   );
 }
