@@ -14,6 +14,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center bg-[#F5F5F5] min-h-screen">
+      <div key={0} className="w-full relative">
+          <img
+            src={'/8.png'}
+            className="w-full h-auto object-cover"
+          />
+        </div>
       {images.map((img, index) => (
         <div key={index} className="w-4/5 relative mb-4">
           <img
