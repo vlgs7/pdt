@@ -1,23 +1,23 @@
 import Image from 'next/image'
-import sampleImage from '../public/sample.jpg' // 替换为你的图片路径
+import sampleImage from '../public/sample.jpg' // Replace with your image path
 
 export default function Home() {
   const images = [
-    sampleImage,
-    sampleImage,
-    sampleImage, // 添加更多图片路径
+    '/1.png',
+    '/2.png',
+    '/3.png',
+    '/4.png',
+    '/5.png',
+    '/6.png',
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-[#F5F5F5] min-h-screen">
       {images.map((img, index) => (
-        <div key={index} className="w-full relative mb-4">
-          <Image
+        <div key={index} className="w-4/5 relative mb-4">
+          <img
             src={img}
             alt={`Sample Image ${index + 1}`}
-            layout="responsive"
-            width={1920}
-            // height={1080}
             className="w-full h-auto object-cover"
           />
         </div>
